@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+/* 如果你需要自定义主题，可以在这里添加 @theme 块 */
+/* 例如：
+@theme {
+  --color-primary: #your-color;
+}
+*/
+
+/* 保留你的自定义类，如果需要 */
+.no-blue-decoration-link {
+  color: inherit;
+  text-decoration: none;
+}
