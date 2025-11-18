@@ -3,9 +3,9 @@ name: Lint and Format Check
 # 控制工作流何时运行
 on:
   push:
-    branches: ["main", "develop"] # 当推送到 main 或 develop 分支时触发
+    branches: ['main', 'develop'] # 当推送到 main 或 develop 分支时触发
   pull_request:
-    branches: ["main", "develop"] # 当向 main 或 develop 分支发起 PR 时触发
+    branches: ['main', 'develop'] # 当向 main 或 develop 分支发起 PR 时触发
 
 # 工作流运行的一个或多个作业
 jobs:
@@ -23,8 +23,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # 使用与你项目匹配的 Node.js 版本
-          cache: "npm" # 缓存 npm 依赖，加快后续运行速度
+          node-version: '20' # 使用与你项目匹配的 Node.js 版本
+          cache: 'npm' # 缓存 npm 依赖，加快后续运行速度
 
       # 3. 安装依赖
       - name: Install dependencies
