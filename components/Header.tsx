@@ -35,12 +35,7 @@ export default function Header() {
 
           <div className="flex items-center gap-2 text-sm hover:text-slate-900 transition-colors">
             <GitHub sx={{ fontSize: 18 }} />
-            <a
-              href={basicInfo.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
+            <a href={basicInfo.github} target="_blank" rel="noopener noreferrer" className="">
               {basicInfo.github}
             </a>
           </div>
