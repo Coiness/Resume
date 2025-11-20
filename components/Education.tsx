@@ -1,11 +1,12 @@
 import { resumeData } from '@/lib/data'
 import { Card, CardContent } from '@/components/ui/card'
+import CollapsibleSection from './CollapsibleSection'
 
 export default function Education() {
   const { school, major, time } = resumeData.education
+
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-4 px-4">教育背景</h2>
+    <CollapsibleSection title="教育背景">
       <Card>
         <CardContent>
           <div className="flex justify-between items-start">
@@ -17,6 +18,6 @@ export default function Education() {
           </div>
         </CardContent>
       </Card>
-    </section>
+    </CollapsibleSection>
   )
 }
