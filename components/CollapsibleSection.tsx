@@ -14,11 +14,11 @@ export default function CollapsibleSection({ title, children }: CollapsibleSecti
   return (
     <section className="mb-8">
       <div
-        className="flex items-center justify-between px-4 mb-4 cursor-pointer"
+        className="flex items-center justify-between px-4 mb-6 cursor-pointer border-b border-gray-100 pb-2 hover:bg-gray-50/50 transition-colors rounded-t-lg"
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
-        <h2 className="text-2xl font-bold">{title}</h2>
-        {isCollapsed ? <ExpandLess /> : <ExpandMore />}
+        <h2 className="text-2xl font-bold select-none text-slate-800">{title}</h2>
+        {isCollapsed ? <ExpandLess className="text-gray-400" /> : <ExpandMore className="text-gray-400" />}
       </div>
       <div
         style={{

@@ -7,7 +7,11 @@ function Card({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="card"
       className={cn(
-        'bg-card text-card-foreground flex flex-col gap-6 rounded-xl  py-6 shadow-sm',
+        // 修改点：
+        // 1. border-black/5: 极淡的边框，比默认的更精致
+        // 2. transition-all duration-300: 添加平滑过渡
+        // 3. hover:shadow-md hover:-translate-y-1: 悬停时上浮并加深阴影
+        'bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-black/5 py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-black/10',
         className,
       )}
       {...props}
