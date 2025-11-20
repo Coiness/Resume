@@ -18,7 +18,11 @@ export default function CollapsibleSection({ title, children }: CollapsibleSecti
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
         <h2 className="text-2xl font-bold select-none text-slate-800">{title}</h2>
-        {isCollapsed ? <ExpandLess className="text-gray-400" /> : <ExpandMore className="text-gray-400" />}
+        {isCollapsed ? (
+          <ExpandLess className="text-gray-400" />
+        ) : (
+          <ExpandMore className="text-gray-400" />
+        )}
       </div>
       <div
         style={{

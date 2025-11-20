@@ -12,8 +12,7 @@ const badgeVariants = cva(
       variant: {
         default: 'border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90',
         // 修改点：secondary 变淡，使用 bg-slate-100 text-slate-700
-        secondary:
-          'border-transparent bg-slate-100 text-slate-700 [a&]:hover:bg-slate-200/80',
+        secondary: 'border-transparent bg-slate-100 text-slate-700 [a&]:hover:bg-slate-200/80',
         destructive:
           'border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
         outline: 'text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground',
