@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+`以下内容由 Zread 总结生成，不代表个人观点的我说`
 
-## Getting Started
+# Resume - 现代化个人简历网站
 
-First, run the development server:
+一个基于 Next.js 16 和 React 19 构建的现代化简历展示网站，采用 TypeScript 开发，集成 shadcn/ui 和 Material-UI 组件系统，提供优雅的响应式设计和交互体验。
+
+## ✨ 特性
+
+- 🚀 **现代化技术栈**: Next.js 16 + React 19 + TypeScript
+- 🎨 **混合 UI 系统**: shadcn/ui + Material-UI 完美结合
+- 📱 **响应式设计**: 支持桌面端和移动端完美显示
+- ⚡ **性能优化**: App Router + Server Components
+- 🎯 **组件化架构**: 可复用的模块化组件设计
+- 💫 **交互体验**: 可折叠部分、悬停动画等精致交互
+- 🔧 **开发体验**: ESLint + Prettier + Husky 完整代码质量保障
+
+## 🛠️ 技术栈
+
+| 技术         | 版本   | 用途           |
+| ------------ | ------ | -------------- |
+| Next.js      | 16.0.3 | React 全栈框架 |
+| React        | 19.2.0 | UI 库          |
+| TypeScript   | 5.x    | 类型安全       |
+| Tailwind CSS | 4.1.17 | 样式系统       |
+| shadcn/ui    | Latest | 主要组件库     |
+| Material-UI  | 7.3.5  | 补充 UI 组件   |
+
+## 🚀 快速开始
+
+### 环境要求
+
+- Node.js 18+
+- npm/yarn/pnpm
+
+### 安装运行
 
 ```bash
+# 克隆项目
+git clone https://github.com/Coiness/Resume.git
+cd Resume
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+访问 [http://localhost:3000](http://localhost:3000) 查看效果。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 可用脚本
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| 命令             | 用途           |
+| ---------------- | -------------- |
+| `npm run dev`    | 启动开发服务器 |
+| `npm run build`  | 构建生产版本   |
+| `npm run start`  | 启动生产服务器 |
+| `npm run lint`   | 运行 ESLint    |
+| `npm run format` | 代码格式化     |
 
-## Learn More
+## 📁 项目结构
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── app/                   # Next.js App Router
+│   ├── globals.css       # 全局样式
+│   ├── layout.tsx        # 根布局
+│   └── page.tsx          # 首页
+├── components/           # React 组件
+│   ├── Header.tsx        # 联系信息头部
+│   ├── About.tsx         # 关于部分
+│   ├── Projects.tsx      # 项目展示
+│   ├── Education.tsx     # 教育经历
+│   ├── CollapsibleSection.tsx # 可折叠组件
+│   └── ui/              # shadcn/ui 组件
+└── public/              # 静态资源
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 组件介绍
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Header**: 展示个人联系信息和头像
+- **About**: 个人简介和技能展示
+- **Projects**: 项目经历展示，支持技术栈徽章
+- **Education**: 教育背景展示
+- **CollapsibleSection**: 可折叠的内容区域，提升用户体验
 
-## Deploy on Vercel
+## 🔧 自定义指南
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+项目采用模块化设计，你可以轻松定制：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **个人信息**: 编辑各组件文件中的数据
+2. **样式主题**: 修改 [globals.css](app/globals.css) 中的 CSS 变量
+3. **组件布局**: 调整 [page.tsx](app/page.tsx) 中的组件排列
+4. **UI 组件**: 基于 shadcn/ui 的组件支持完全自定义
+
+## 📄 许可
+
+MIT License
